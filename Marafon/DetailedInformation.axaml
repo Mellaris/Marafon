@@ -1,0 +1,51 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="650" d:DesignHeight="340"
+        x:Class="Marafon.DetailedInformation"
+		Width="650" Height="340"
+        Title="DetailedInformation">
+	<StackPanel>
+		<StackPanel Height="60" Background="DarkGray" Orientation="Horizontal">
+			<Button Margin="30,0,0,0">Назад</Button>
+			<TextBlock Foreground="White" Margin="70,0,0,0" VerticalAlignment="Center"
+				       FontSize="20"
+                       FontWeight="Bold"
+                       HorizontalAlignment="Center">MARATHON SKILLS 2016</TextBlock>
+		</StackPanel>
+		<TextBlock Margin="0,30,0,0"  FontSize="24"
+                       FontWeight="Regular"
+                       HorizontalAlignment="Center">Подробная информация</TextBlock>
+		<StackPanel Margin="0,20,0,0" HorizontalAlignment="Center" Orientation="Horizontal">
+			<StackPanel >
+				<Button  Width="300" CornerRadius="8">Marathon Skills 2016</Button>
+				<Button Width="300" CornerRadius="8">
+					Предыдущие
+					результаты
+				</Button>
+				<Button Width="300" CornerRadius="8">BMI калькулятор</Button>
+			</StackPanel>
+			<StackPanel>
+				<Button Width="300" CornerRadius="8">
+					Насколько долгий
+					марафон
+				</Button>
+				<Button Click="Button_Click" Width="300" CornerRadius="8">
+					Список
+					благотворительных
+					организаций
+				</Button>
+				<Button Width="300" CornerRadius="8">BMR калькулятор</Button>
+			</StackPanel>
+		</StackPanel>
+
+		<StackPanel VerticalAlignment="Bottom" Height="40" Margin="0,75,0,0" Background="DarkGray">
+			<TextBlock Name="CountdownText"
+                       FontSize="14"
+					   VerticalAlignment="Bottom"
+                       HorizontalAlignment="Center"
+                       Foreground="White"/>
+		</StackPanel>
+	</StackPanel>
+</Window>

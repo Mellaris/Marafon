@@ -19,6 +19,7 @@ public partial class RunnerSponsor : Window
 {
     private TextBlock _countdownText;
     private static readonly DateTime MarathonDate = new DateTime(2025, 11, 24, 0, 0, 0);
+    public int indexSponsor;
     public string cardNumber;
     private readonly User9Context _dbContext;
     public static User9Context DbContext { get; set; } = new User9Context();
@@ -44,6 +45,7 @@ public partial class RunnerSponsor : Window
             {
                 Firstname = user.Firstname,
                 Lastname = user.Lastname,
+                Email = user.Email,
             })
             .ToList();
 
@@ -114,6 +116,9 @@ public partial class RunnerSponsor : Window
 
         // Если все проверки пройдены, выполнить оплату
         ShowErrorMessage.Text = "Пожертвование успешно оформлено!";
+        int cost = Convert.ToInt32(donationAmountTextBox.Text);
+        new ConfirmationSponsorship(indexSponsor, cost).Show();
+        Close();
     }
     private void UpdateCountdown()
     {
@@ -124,5 +129,11 @@ public partial class RunnerSponsor : Window
         {
             _countdownText.Text = $"{timeLeft.Days} дней {timeLeft.Hours} часов {timeLeft.Minutes} минут до старта марафона!";
         });
+    }
+
+    private void ComboBox_SelectionChanged(object? sender, Avalonia.Controls.SelectionChangedEventArgs e)
+    {
+        indexSponsor = runnerComboBox.SelectedIndex;
+        indexSponsor = indexSponsor + 1;
     }
 }

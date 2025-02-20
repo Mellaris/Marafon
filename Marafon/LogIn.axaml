@@ -1,0 +1,49 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="600" d:DesignHeight="420"
+        x:Class="Marafon.LogIn"
+		Width="600" Height="420"
+        Title="LogIn">
+	<StackPanel>
+		<StackPanel Height="60" Background="DarkGray" Orientation="Horizontal">
+			<Button Margin="30,0,0,0">Назад</Button>
+			<TextBlock Foreground="White" Margin="70,0,0,0" VerticalAlignment="Center"
+				       FontSize="20"
+                       FontWeight="Bold"
+                       HorizontalAlignment="Center">MARATHON SKILLS 2016</TextBlock>
+		</StackPanel>
+		<TextBlock Margin="0,30,0,0"  FontSize="24"
+                       FontWeight="Regular"
+                       HorizontalAlignment="Center">Форма авторизации</TextBlock>
+
+		<TextBlock Margin="0,10,0,0" Width="560" TextAlignment="Center" TextWrapping="Wrap">
+			Пожалуйста, авторизуйтесь в системе, используя ваш адрес электронной почты
+			и пароль.
+		</TextBlock>
+
+		<StackPanel Margin="60,20,0,0" Orientation="Horizontal">
+			<TextBlock VerticalAlignment="Center">Email:</TextBlock>
+			<TextBox Margin="10,0,0,0" Width="250" Watermark="Enter your email address"></TextBox>
+		</StackPanel>
+
+		<StackPanel Margin="30,10,0,0" Orientation="Horizontal">
+			<TextBlock VerticalAlignment="Center">Password:</TextBlock>
+			<TextBox Margin="11,0,0,0" Width="250" Watermark="Enter your password"></TextBox>
+		</StackPanel>
+
+		<StackPanel Margin="110,20,0,0" Orientation="Horizontal">
+			<Button>LogIn</Button>
+			<Button Margin="20,0,0,0">Cancel</Button>
+		</StackPanel>
+
+		<StackPanel VerticalAlignment="Bottom" Height="40" Margin="0,75,0,0" Background="DarkGray">
+			<TextBlock Name="CountdownText"
+                       FontSize="14"
+					   VerticalAlignment="Bottom"
+                       HorizontalAlignment="Center"
+                       Foreground="White"/>
+		</StackPanel>
+	</StackPanel>
+</Window>

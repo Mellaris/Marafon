@@ -15,6 +15,8 @@ public partial class User
 
     public char Roleid { get; set; }
 
+    public int Id { get; set; }
+
     public virtual Role Role { get; set; } = null!;
 
     public virtual ICollection<Runner> Runners { get; set; } = new List<Runner>();

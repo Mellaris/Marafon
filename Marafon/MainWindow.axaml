@@ -29,7 +29,7 @@
 		<StackPanel HorizontalAlignment="Center" Grid.Row="2" VerticalAlignment="Center">
 			<Button Content="Я хочу стать бегуном" Margin="10"/>
 			<Button Click="NewSponsor" Content="Я хочу стать спонсором бегуна" Margin="10"/>
-			<Button Content="Я хочу узнать больше о событии" Margin="10"/>
+			<Button Click="Button_Click" Content="Я хочу узнать больше о событии" Margin="10"/>
 			<Button Margin="240,50,0,0">LogIn</Button>
 		</StackPanel>
 		

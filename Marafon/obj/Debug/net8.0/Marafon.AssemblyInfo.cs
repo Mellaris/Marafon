@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Marafon")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a4e721a4178e2447a0092bcc90477eabf88225e2")]
 [assembly: System.Reflection.AssemblyProductAttribute("Marafon")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Marafon")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

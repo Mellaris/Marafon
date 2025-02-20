@@ -33,7 +33,7 @@
 				</StackPanel>
 				<StackPanel Margin="35,10,0,0" Orientation="Horizontal">
 					<TextBlock Margin="0,10,0,0" VerticalAlignment="Center">Бегун</TextBlock>
-					<ComboBox Name="runnerComboBox" Margin="38,10,0,0" Width="200">
+					<ComboBox SelectionChanged="ComboBox_SelectionChanged" Name="runnerComboBox" Margin="38,10,0,0" Width="200">
 						<ComboBox.ItemTemplate>
 
 							<DataTemplate>

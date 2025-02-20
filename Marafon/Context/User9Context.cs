@@ -446,6 +446,9 @@ public partial class User9Context : DbContext
             entity.Property(e => e.Firstname)
                 .HasMaxLength(80)
                 .HasColumnName("firstname");
+            entity.Property(e => e.Id)
+                .ValueGeneratedOnAdd()
+                .HasColumnName("id");
             entity.Property(e => e.Lastname)
                 .HasMaxLength(80)
                 .HasColumnName("lastname");

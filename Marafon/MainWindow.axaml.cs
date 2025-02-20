@@ -3,6 +3,7 @@ using Avalonia.Controls;
 using Avalonia.Interactivity;
 using Avalonia.Markup.Xaml;
 using Avalonia.Threading;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Timers;
 
@@ -30,7 +31,7 @@ namespace Marafon
             timer.Elapsed += (s, e) => UpdateCountdown();
             timer.Start();
         }
-
+        
         private void UpdateCountdown()
         {
             var now = DateTime.Now;
@@ -49,6 +50,12 @@ namespace Marafon
         private void InitializeComponent()
         {
             AvaloniaXamlLoader.Load(this);
+        }
+
+        private void Button_Click(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
+        {
+            new DetailedInformation().Show();
+            Close();
         }
     }
 }

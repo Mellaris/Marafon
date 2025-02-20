@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Work\\Marafon\\Marafon\\Marafon.csproj": {}
+    "D:\\Marafon\\Marafon\\Marafon.csproj": {}
   },
   "projects": {
-    "D:\\Work\\Marafon\\Marafon\\Marafon.csproj": {
+    "D:\\Marafon\\Marafon\\Marafon.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Work\\Marafon\\Marafon\\Marafon.csproj",
+        "projectUniqueName": "D:\\Marafon\\Marafon\\Marafon.csproj",
         "projectName": "Marafon",
-        "projectPath": "D:\\Work\\Marafon\\Marafon\\Marafon.csproj",
+        "projectPath": "D:\\Marafon\\Marafon\\Marafon.csproj",
         "packagesPath": "C:\\Users\\Notebook\\.nuget\\packages\\",
-        "outputPath": "D:\\Work\\Marafon\\Marafon\\obj\\",
+        "outputPath": "D:\\Marafon\\Marafon\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\PerfLogs\\NuGetPackages"

@@ -1,0 +1,151 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Work\\Marafon\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{81817CFC-7C97-4793-ADE9-F475457B9412}|Marafon\\Marafon.csproj|d:\\work\\marafon\\marafon\\runnersponsor.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{81817CFC-7C97-4793-ADE9-F475457B9412}|Marafon\\Marafon.csproj|solutionrelative:marafon\\runnersponsor.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81817CFC-7C97-4793-ADE9-F475457B9412}|Marafon\\Marafon.csproj|d:\\work\\marafon\\marafon\\runnersponsor.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81817CFC-7C97-4793-ADE9-F475457B9412}|Marafon\\Marafon.csproj|solutionrelative:marafon\\runnersponsor.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81817CFC-7C97-4793-ADE9-F475457B9412}|Marafon\\Marafon.csproj|d:\\work\\marafon\\marafon\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81817CFC-7C97-4793-ADE9-F475457B9412}|Marafon\\Marafon.csproj|solutionrelative:marafon\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81817CFC-7C97-4793-ADE9-F475457B9412}|Marafon\\Marafon.csproj|d:\\work\\marafon\\marafon\\mainwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81817CFC-7C97-4793-ADE9-F475457B9412}|Marafon\\Marafon.csproj|solutionrelative:marafon\\mainwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81817CFC-7C97-4793-ADE9-F475457B9412}|Marafon\\Marafon.csproj|d:\\work\\marafon\\marafon\\context\\user9context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81817CFC-7C97-4793-ADE9-F475457B9412}|Marafon\\Marafon.csproj|solutionrelative:marafon\\context\\user9context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81817CFC-7C97-4793-ADE9-F475457B9412}|Marafon\\Marafon.csproj|d:\\work\\marafon\\marafon\\mainwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{81817CFC-7C97-4793-ADE9-F475457B9412}|Marafon\\Marafon.csproj|solutionrelative:marafon\\mainwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81817CFC-7C97-4793-ADE9-F475457B9412}|Marafon\\Marafon.csproj|d:\\work\\marafon\\marafon\\models\\volunteer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81817CFC-7C97-4793-ADE9-F475457B9412}|Marafon\\Marafon.csproj|solutionrelative:marafon\\models\\volunteer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81817CFC-7C97-4793-ADE9-F475457B9412}|Marafon\\Marafon.csproj|d:\\work\\marafon\\marafon\\models\\sponsorship.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81817CFC-7C97-4793-ADE9-F475457B9412}|Marafon\\Marafon.csproj|solutionrelative:marafon\\models\\sponsorship.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "User9Context.cs",
+              "DocumentMoniker": "D:\\Work\\Marafon\\Marafon\\Context\\User9Context.cs",
+              "RelativeDocumentMoniker": "Marafon\\Context\\User9Context.cs",
+              "ToolTip": "D:\\Work\\Marafon\\Marafon\\Context\\User9Context.cs",
+              "RelativeToolTip": "Marafon\\Context\\User9Context.cs",
+              "ViewState": "AgIAAOIBAAAAAAAAAAAewPEBAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T07:42:52.259Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\Work\\Marafon\\Marafon\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Marafon\\Models\\User.cs",
+              "ToolTip": "D:\\Work\\Marafon\\Marafon\\Models\\User.cs",
+              "RelativeToolTip": "Marafon\\Models\\User.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAuwBUAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T07:41:02.708Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RunnerSponsor.axaml",
+              "DocumentMoniker": "D:\\Work\\Marafon\\Marafon\\RunnerSponsor.axaml",
+              "RelativeDocumentMoniker": "Marafon\\RunnerSponsor.axaml",
+              "ToolTip": "D:\\Work\\Marafon\\Marafon\\RunnerSponsor.axaml",
+              "RelativeToolTip": "Marafon\\RunnerSponsor.axaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-02-20T06:55:32.39Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RunnerSponsor.axaml.cs",
+              "DocumentMoniker": "D:\\Work\\Marafon\\Marafon\\RunnerSponsor.axaml.cs",
+              "RelativeDocumentMoniker": "Marafon\\RunnerSponsor.axaml.cs",
+              "ToolTip": "D:\\Work\\Marafon\\Marafon\\RunnerSponsor.axaml.cs",
+              "RelativeToolTip": "Marafon\\RunnerSponsor.axaml.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAApwC0AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T06:55:32.316Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Sponsorship.cs",
+              "DocumentMoniker": "D:\\Work\\Marafon\\Marafon\\Models\\Sponsorship.cs",
+              "RelativeDocumentMoniker": "Marafon\\Models\\Sponsorship.cs",
+              "ToolTip": "D:\\Work\\Marafon\\Marafon\\Models\\Sponsorship.cs",
+              "RelativeToolTip": "Marafon\\Models\\Sponsorship.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T06:40:32.838Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MainWindow.axaml",
+              "DocumentMoniker": "D:\\Work\\Marafon\\Marafon\\MainWindow.axaml",
+              "RelativeDocumentMoniker": "Marafon\\MainWindow.axaml",
+              "ToolTip": "D:\\Work\\Marafon\\Marafon\\MainWindow.axaml",
+              "RelativeToolTip": "Marafon\\MainWindow.axaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-02-19T17:06:20.816Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainWindow.axaml.cs",
+              "DocumentMoniker": "D:\\Work\\Marafon\\Marafon\\MainWindow.axaml.cs",
+              "RelativeDocumentMoniker": "Marafon\\MainWindow.axaml.cs",
+              "ToolTip": "D:\\Work\\Marafon\\Marafon\\MainWindow.axaml.cs",
+              "RelativeToolTip": "Marafon\\MainWindow.axaml.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAQwCkAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-19T17:06:18.568Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Volunteer.cs",
+              "DocumentMoniker": "D:\\Work\\Marafon\\Marafon\\Models\\Volunteer.cs",
+              "RelativeDocumentMoniker": "Marafon\\Models\\Volunteer.cs",
+              "ToolTip": "D:\\Work\\Marafon\\Marafon\\Models\\Volunteer.cs",
+              "RelativeToolTip": "Marafon\\Models\\Volunteer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T06:40:44.586Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

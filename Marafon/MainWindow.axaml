@@ -1,0 +1,43 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="600" d:DesignHeight="400"
+        x:Class="Marafon.MainWindow"
+		x:CompileBindings="False"
+        Title="Marafon">
+	<Grid RowDefinitions="Auto,Auto,*,Auto">
+		<StackPanel Grid.Row="0" Background="DarkGray" >
+			<TextBlock Text="MARATHON SKILLS 2016"
+                       FontSize="20"
+                       FontWeight="Bold"
+                       HorizontalAlignment="Center"
+                       Foreground="White"/>
+		</StackPanel>
+
+		<StackPanel Grid.Row="1" Margin="10">
+			<TextBlock Text="Москва, Россия"
+                       FontSize="16"
+                       FontStyle="Italic"
+                       HorizontalAlignment="Center"/>
+			<TextBlock Name="CurrentDate"
+                       FontSize="14"
+                       FontStyle="Italic"
+                       HorizontalAlignment="Center"/>
+		</StackPanel>
+
+		<StackPanel HorizontalAlignment="Center" Grid.Row="2" VerticalAlignment="Center">
+			<Button Content="Я хочу стать бегуном" Margin="10"/>
+			<Button Click="NewSponsor" Content="Я хочу стать спонсором бегуна" Margin="10"/>
+			<Button Content="Я хочу узнать больше о событии" Margin="10"/>
+			<Button Margin="240,50,0,0">LogIn</Button>
+		</StackPanel>
+		
+		<StackPanel Grid.Row="3" Background="DarkGray">
+			<TextBlock Name="CountdownText"
+                       FontSize="14"
+                       HorizontalAlignment="Center"
+                       Foreground="White"/>
+		</StackPanel>
+	</Grid>
+</Window>

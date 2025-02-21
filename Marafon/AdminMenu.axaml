@@ -1,0 +1,48 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="600" d:DesignHeight="350"
+        x:Class="Marafon.AdminMenu"
+		Width="600" Height="350"
+        Title="AdminMenu">
+	<StackPanel>
+		<StackPanel Height="60" Background="DarkGray" Orientation="Horizontal">
+			<Button Margin="30,0,0,0">Назад</Button>
+			<TextBlock Foreground="White" Margin="70,0,0,0" VerticalAlignment="Center"
+				       FontSize="20"
+                       FontWeight="Bold"
+                       HorizontalAlignment="Center">MARATHON SKILLS 2016</TextBlock>
+			<Button Click="Back" Margin="90,0,0,0" HorizontalAlignment="Right">LogOut</Button>
+		</StackPanel>
+		<TextBlock Margin="0,30,0,0"  FontSize="24"
+                       FontWeight="Regular"
+                       HorizontalAlignment="Center">Меню администратора</TextBlock>
+		<StackPanel Margin="0,20,0,0" HorizontalAlignment="Center" Orientation="Horizontal">
+			<StackPanel >
+				<Button Margin="10"  Width="250" CornerRadius="8">Пользователи</Button>
+				<Button  Margin="10"  Width="250" CornerRadius="8">
+					Благотворительные организации
+				</Button>
+				
+			</StackPanel>
+			<StackPanel>
+				<Button  Margin="10"  Width="250" CornerRadius="8">
+					Волонтеры
+				</Button>
+				<Button  Margin="10"  Width="250" CornerRadius="8">
+					Инвентарь
+				</Button>
+
+			</StackPanel>
+		</StackPanel>
+
+		<StackPanel VerticalAlignment="Bottom" Height="40" Margin="0,75,0,0" Background="DarkGray">
+			<TextBlock Name="CountdownText"
+                       FontSize="14"
+					   VerticalAlignment="Bottom"
+                       HorizontalAlignment="Center"
+                       Foreground="White"/>
+		</StackPanel>
+	</StackPanel>
+</Window>

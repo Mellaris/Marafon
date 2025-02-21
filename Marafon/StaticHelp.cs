@@ -8,6 +8,6 @@ namespace Marafon
 {
     static public class StaticHelp
     {
-
+        public static string role;
     }
 }

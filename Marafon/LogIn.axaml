@@ -24,21 +24,21 @@
 		</TextBlock>
 
 		<StackPanel Margin="60,20,0,0" Orientation="Horizontal">
-			<TextBlock VerticalAlignment="Center">Email:</TextBlock>
-			<TextBox Margin="10,0,0,0" Width="250" Watermark="Enter your email address"></TextBox>
+			<TextBlock  VerticalAlignment="Center">Email:</TextBlock>
+			<TextBox Name="mail" Margin="10,0,0,0" Width="250" Watermark="Enter your email address"></TextBox>
 		</StackPanel>
 
 		<StackPanel Margin="30,10,0,0" Orientation="Horizontal">
 			<TextBlock VerticalAlignment="Center">Password:</TextBlock>
-			<TextBox Margin="11,0,0,0" Width="250" Watermark="Enter your password"></TextBox>
+			<TextBox Name="passw" Margin="11,0,0,0" Width="250" Watermark="Enter your password"></TextBox>
 		</StackPanel>
 
 		<StackPanel Margin="110,20,0,0" Orientation="Horizontal">
-			<Button>LogIn</Button>
+			<Button Click="Button_Click">LogIn</Button>
 			<Button Margin="20,0,0,0">Cancel</Button>
 		</StackPanel>
-
-		<StackPanel VerticalAlignment="Bottom" Height="40" Margin="0,75,0,0" Background="DarkGray">
+		<TextBlock HorizontalAlignment="Center" Name="textM"></TextBlock>
+		<StackPanel VerticalAlignment="Bottom" Height="40" Margin="0,55,0,0" Background="DarkGray">
 			<TextBlock Name="CountdownText"
                        FontSize="14"
 					   VerticalAlignment="Bottom"

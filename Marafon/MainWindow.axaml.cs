@@ -42,6 +42,11 @@ namespace Marafon
                 _countdownText.Text = $"{timeLeft.Days} дней {timeLeft.Hours} часов {timeLeft.Minutes} минут до старта марафона!";
             });
         }
+        private void CheckRun(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
+        {
+            new CheckingRunner().Show();
+            Close();
+        }
         private void NewSponsor(object sender, RoutedEventArgs e)
         {
             new RunnerSponsor().Show();
@@ -55,6 +60,12 @@ namespace Marafon
         private void Button_Click(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
         {
             new DetailedInformation().Show();
+            Close();
+        }
+
+        private void Button_Click_1(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
+        {
+            new LogIn().Show();
             Close();
         }
     }

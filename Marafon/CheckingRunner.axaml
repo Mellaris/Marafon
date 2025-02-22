@@ -8,7 +8,7 @@
         Title="CheckingRunner">
 	<Grid RowDefinitions="Auto,Auto,*,Auto">
 		<StackPanel Height="60" Background="DarkGray" Orientation="Horizontal">
-			<Button Margin="30,0,0,0">Назад</Button>
+			<Button Click="Button_Click_2" Margin="30,0,0,0">Назад</Button>
 			<TextBlock Foreground="White" Margin="70,0,0,0" VerticalAlignment="Center"
 				       FontSize="20"
                        FontWeight="Bold"

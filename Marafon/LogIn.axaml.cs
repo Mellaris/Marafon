@@ -83,4 +83,10 @@ public partial class LogIn : Window
             }
         }
     }
+
+    private void Button_Click_1(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
+    {
+        new MainWindow().Show();
+        Close();
+    }
 }

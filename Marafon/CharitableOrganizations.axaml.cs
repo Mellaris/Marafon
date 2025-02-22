@@ -51,4 +51,10 @@ public partial class CharitableOrganizations : Window
             _countdownText.Text = $"{timeLeft.Days} дней {timeLeft.Hours} часов {timeLeft.Minutes} минут до старта марафона!";
         });
     }
+
+    private void Button_Click(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
+    {
+        new DetailedInformation().Show();
+        Close();
+    }
 }

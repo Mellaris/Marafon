@@ -48,7 +48,7 @@
 				</StackPanel>
 				<StackPanel Margin="103,10,0,0" Orientation="Horizontal">
 					<TextBlock VerticalAlignment="Center">Пол</TextBlock>
-					<ComboBox Name="GenderBox" Margin="10,0,0,0" Width="200">
+					<ComboBox SelectionChanged="ComboBox_SelectionChanged" Name="GenderBox" Margin="10,0,0,0" Width="200">
 						<ComboBox.ItemTemplate>
 
 							<DataTemplate>
@@ -68,7 +68,7 @@
 				</StackPanel>
 				<StackPanel Margin="0,10,0,0" Orientation="Horizontal">
 					<TextBlock VerticalAlignment="Center">Страна</TextBlock>
-					<ComboBox Name="countryBox" Margin="5,10,0,0" Width="200">
+					<ComboBox SelectionChanged="ComboBox_SelectionChanged_1" Name="countryBox" Margin="5,10,0,0" Width="200">
 						<ComboBox.ItemTemplate>
 
 							<DataTemplate>

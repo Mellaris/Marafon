@@ -40,4 +40,11 @@ public partial class RunnerMenu : Window
         new MainWindow().Show();
         Close();
     }
+
+    private void Button_Click_1(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
+    {
+        StaticHelp.role = "1";
+        new LogIn().Show();
+        Close();
+    }
 }

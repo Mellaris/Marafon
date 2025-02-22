@@ -39,4 +39,10 @@ public partial class DetailedInformation : Window
         new CharitableOrganizations().Show();
         Close();
     }
+
+    private void Button_Click_1(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
+    {
+        new MainWindow().Show();
+        Close() ;
+    }
 }

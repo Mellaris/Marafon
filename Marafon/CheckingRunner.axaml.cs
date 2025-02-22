@@ -43,4 +43,10 @@ public partial class CheckingRunner : Window
             _countdownText.Text = $"{timeLeft.Days} дней {timeLeft.Hours} часов {timeLeft.Minutes} минут до старта марафона!";
         });
     }
+
+    private void Button_Click_2(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
+    {
+        new MainWindow().Show();
+        Close();
+    }
 }

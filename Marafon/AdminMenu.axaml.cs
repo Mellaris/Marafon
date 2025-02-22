@@ -39,4 +39,11 @@ public partial class AdminMenu : Window
             _countdownText.Text = $"{timeLeft.Days} дней {timeLeft.Hours} часов {timeLeft.Minutes} минут до старта марафона!";
         });
     }
+
+    private void Button_Click_1(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
+    {
+        StaticHelp.role = "1";
+        new LogIn().Show();
+        Close();
+    }
 }

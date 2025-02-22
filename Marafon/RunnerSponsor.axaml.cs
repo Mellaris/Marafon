@@ -135,4 +135,10 @@ public partial class RunnerSponsor : Window
         indexSponsor = runnerComboBox.SelectedIndex;
         indexSponsor = indexSponsor + 1;
     }
+
+    private void Button_Click(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
+    {
+        new MainWindow().Show();
+        Close();
+    }
 }

@@ -9,6 +9,8 @@ using Marafon.Models;
 using System.Timers;
 using System.Text.RegularExpressions;
 using Avalonia.Interactivity;
+using Metsys.Bson;
+using System.Xml.Linq;
 
 namespace Marafon;
 
@@ -17,6 +19,11 @@ public partial class RunnerRegistration : Window
     private TextBlock _countdownText;
     private static readonly DateTime MarathonDate = new DateTime(2025, 11, 24, 0, 0, 0);
     public static User9Context DbContext { get; set; } = new User9Context();
+
+    public int indexGender;
+    public string textGender;
+    public int indexCountry;
+    public string textCountry;
     public RunnerRegistration()
     {
         InitializeComponent();
@@ -80,9 +87,41 @@ public partial class RunnerRegistration : Window
     }
     private void RegisterButton_Click(object sender, RoutedEventArgs e)
     {
+        char role = 'R';
         if (ValidateFields())
         {
-            MessageBox.Text = "Регистрация успешна!";
+            User runner = new User
+            {
+                Id = DbContext.Users.OrderBy(x => x.Id).LastOrDefault().Id + 1,
+                Email = EmailBox.Text,
+                Userpassword = PasswordBox.Text,
+                Firstname = NameBox.Text,
+                Lastname = SurnameBox.Text,
+                Roleid = role,
+
+            };
+            using (var a = new User9Context())
+            {
+                a.Add(runner);
+                a.SaveChanges();
+            }
+
+
+            Runner run = new Runner
+            {
+                Runnerid = DbContext.Runners.OrderBy(x => x.Runnerid).LastOrDefault().Runnerid + 1,
+                Email = EmailBox.Text,
+                Dateofbirth = Convert.ToDateTime(BirthDateBox.Text),
+                Gender = textGender,
+                Countrycode = textCountry,
+            };
+            using (var a = new User9Context())
+            {
+                a.Add(run);
+                a.SaveChanges();
+            }
+            new LogIn().Show();
+            Close();
         }
     }
     private void Stop(object sender, RoutedEventArgs e)
@@ -128,5 +167,40 @@ public partial class RunnerRegistration : Window
         {
             _countdownText.Text = $"{timeLeft.Days} дней {timeLeft.Hours} часов {timeLeft.Minutes} минут до старта марафона!";
         });
+    }
+
+    private void ComboBox_SelectionChanged(object? sender, Avalonia.Controls.SelectionChangedEventArgs e)
+    {
+        indexGender = GenderBox.SelectedIndex;
+        if(indexGender == 0)
+        {
+            textGender = "Female";
+        }
+        else
+        {
+            textGender = "Male";
+        }
+    }
+
+    private void ComboBox_SelectionChanged_1(object? sender, Avalonia.Controls.SelectionChangedEventArgs e)
+    {
+        indexCountry = countryBox.SelectedIndex;
+        indexCountry = indexCountry + 1;
+        var runners = DbContext.Countries
+           .Select(user => new Country
+           {
+               Countryname = user.Countryname,
+               Countrycode = user.Countrycode,
+               Id = user.Id,
+           })
+           .ToList();
+        foreach (Country a in runners)
+        {
+            if(indexCountry == a.Id)
+            {
+                textCountry = a.Countrycode;
+                break;
+            }
+        }
     }
 }

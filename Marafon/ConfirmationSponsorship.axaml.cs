@@ -94,4 +94,16 @@ public partial class ConfirmationSponsorship : Window
             _countdownText.Text = $"{timeLeft.Days} дней {timeLeft.Hours} часов {timeLeft.Minutes} минут до старта марафона!";
         });
     }
+
+    private void Button_Click(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
+    {
+        new RunnerSponsor().Show();
+        Close();
+    }
+
+    private void Button_Click_1(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
+    {
+        new RunnerSponsor().Show();
+        Close();
+    }
 }

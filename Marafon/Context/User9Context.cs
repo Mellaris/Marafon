@@ -92,6 +92,9 @@ public partial class User9Context : DbContext
             entity.Property(e => e.Countryname)
                 .HasMaxLength(100)
                 .HasColumnName("countryname");
+            entity.Property(e => e.Id)
+                .ValueGeneratedOnAdd()
+                .HasColumnName("id");
         });
 
         modelBuilder.Entity<Event>(entity =>
@@ -114,6 +117,9 @@ public partial class User9Context : DbContext
                 .HasMaxLength(2)
                 .IsFixedLength()
                 .HasColumnName("eventtypeid");
+            entity.Property(e => e.Id)
+                .ValueGeneratedOnAdd()
+                .HasColumnName("id");
             entity.Property(e => e.Marathonid).HasColumnName("marathonid");
             entity.Property(e => e.Maxparticipants).HasColumnName("maxparticipants");
             entity.Property(e => e.Startdatetime)
@@ -155,6 +161,9 @@ public partial class User9Context : DbContext
             entity.Property(e => e.Gender1)
                 .HasMaxLength(10)
                 .HasColumnName("gender");
+            entity.Property(e => e.Id)
+                .ValueGeneratedOnAdd()
+                .HasColumnName("id");
         });
 
         modelBuilder.Entity<Marathon>(entity =>

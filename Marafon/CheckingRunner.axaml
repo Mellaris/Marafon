@@ -18,7 +18,7 @@
 
 		<StackPanel HorizontalAlignment="Center" Grid.Row="2" VerticalAlignment="Center">
 			<Button Content="Я участвовал ранее" Margin="10"/>
-			<Button  Content="Я новый участник" Margin="10"/>
+			<Button Click="NewRunner" Content="Я новый участник" Margin="10"/>
 			<Button Click="Button_Click_1" Margin="240,50,0,0">LogIn</Button>
 		</StackPanel>
 

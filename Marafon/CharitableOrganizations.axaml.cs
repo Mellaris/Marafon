@@ -2,12 +2,12 @@ using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
 using Avalonia.Threading;
-using Marafon.Context;
-using Marafon.Models;
 using System;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Timers;
+using Marafon.Context;
+using Marafon.Models;
 
 namespace Marafon;
 
@@ -34,9 +34,9 @@ public partial class CharitableOrganizations : Window
         var runners = DbContext.Charities
             .Select(user => new Charity
             {
-               Charityid = user.Charityid,
-               Charityname = user.Charityname,
-               Charitydescription = user.Charitydescription,
+                Charityid = user.Charityid,
+                Charityname = user.Charityname,
+                Charitydescription = user.Charitydescription,
             })
             .ToList();
         charityOrg.ItemsSource = runners;

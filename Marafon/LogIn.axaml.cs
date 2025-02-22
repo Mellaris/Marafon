@@ -2,11 +2,11 @@ using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
 using Avalonia.Threading;
-using Marafon.Context;
-using Marafon.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Linq;
+using Marafon.Context;
+using Marafon.Models;
 using System.Timers;
 
 namespace Marafon;
@@ -55,7 +55,7 @@ public partial class LogIn : Window
 
         foreach (User runner in runners)
         {
-            if(mail.Text ==  runner.Email && passw.Text == runner.Userpassword)
+            if (mail.Text == runner.Email && passw.Text == runner.Userpassword)
             {
                 StaticHelp.role = runner.Roleid.ToString();
                 if (StaticHelp.role == "R")
@@ -64,7 +64,7 @@ public partial class LogIn : Window
                     Close();
                     break;
                 }
-                else if(StaticHelp.role == "C")
+                else if (StaticHelp.role == "C")
                 {
                     new CoordinatorMenu().Show();
                     Close();

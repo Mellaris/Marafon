@@ -7,6 +7,8 @@ public partial class Gender
 {
     public string Gender1 { get; set; } = null!;
 
+    public int Id { get; set; }
+
     public virtual ICollection<Runner> Runners { get; set; } = new List<Runner>();
 
     public virtual ICollection<Staff> Staff { get; set; } = new List<Staff>();

@@ -2,7 +2,6 @@ using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
 using Avalonia.Threading;
-using Marafon.Context;
 using System;
 using System.Timers;
 using Marafon.Context;
@@ -66,7 +65,7 @@ public partial class ConfirmationSponsorship : Window
                 Runnerid = user.Runnerid,
                 Countrycode = user.Countrycode,
             }).ToList();
-        foreach(Runner user in runner)
+        foreach (Runner user in runner)
         {
             country = user.Countrycode;
             kod.Text = user.Runnerid.ToString();
@@ -79,7 +78,7 @@ public partial class ConfirmationSponsorship : Window
                 Countrycode = user.Countrycode,
                 Countryname = user.Countryname,
             }).ToList();
-        foreach(Country country in coutries)
+        foreach (Country country in coutries)
         {
             contr.Text = country.Countryname;
             break;

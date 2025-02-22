@@ -21,7 +21,6 @@ public partial class RunnerSponsor : Window
     private static readonly DateTime MarathonDate = new DateTime(2025, 11, 24, 0, 0, 0);
     public int indexSponsor;
     public string cardNumber;
-    private readonly User9Context _dbContext;
     public static User9Context DbContext { get; set; } = new User9Context();
     public RunnerSponsor()
     {

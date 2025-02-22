@@ -28,6 +28,11 @@ public partial class CheckingRunner : Window
         new LogIn().Show();
         Close();
     }
+    private void NewRunner(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
+    {
+        new RunnerRegistration().Show();
+        Close();
+    }
     private void UpdateCountdown()
     {
         var now = DateTime.Now;

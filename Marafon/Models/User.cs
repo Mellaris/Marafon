@@ -20,6 +20,4 @@ public partial class User
     public virtual Role Role { get; set; } = null!;
 
     public virtual ICollection<Runner> Runners { get; set; } = new List<Runner>();
-
-    public string FullName => $"{Firstname} {Lastname}";
 }

@@ -11,6 +11,8 @@ public partial class Country
 
     public string Countryflag { get; set; } = null!;
 
+    public int Id { get; set; }
+
     public virtual ICollection<Marathon> Marathons { get; set; } = new List<Marathon>();
 
     public virtual ICollection<Runner> Runners { get; set; } = new List<Runner>();

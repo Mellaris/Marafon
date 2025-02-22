@@ -1,0 +1,99 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="693"
+        x:Class="Marafon.RunnerRegistration"
+		Width="800" 
+		Height="693"
+		x:CompileBindings="False"
+        Title="RunnerRegistration">
+	<StackPanel>
+		<StackPanel Height="60" Background="DarkGray" Orientation="Horizontal">
+			<Button Click="Back" Margin="30,0,0,0">Назад</Button>
+			<TextBlock Foreground="White" Margin="70,0,0,0" VerticalAlignment="Center"
+				       FontSize="20"
+                       FontWeight="Bold"
+                       HorizontalAlignment="Center">MARATHON SKILLS 2016</TextBlock>
+		</StackPanel>
+		<TextBlock Margin="0,30,0,0"  FontSize="24"
+                       FontWeight="Regular"
+                       HorizontalAlignment="Center">Регистрация бегуна</TextBlock>
+		<TextBlock Margin="0,10,0,0" Width="560" TextAlignment="Center" TextWrapping="Wrap">
+			Пожалуйста заполните всю информацию, чтобы зарегистрироваться в качестве
+			бегуна
+		</TextBlock>
+
+		<StackPanel Orientation="Horizontal">
+			<StackPanel Margin="0,40,0,0">
+				<StackPanel Margin="85,10,0,0" Orientation="Horizontal">
+					<TextBlock VerticalAlignment="Center">Emaial</TextBlock>
+					<TextBox Name="EmailBox" Margin="14,0,0,0" Watermark="Email" Width="200"></TextBox>
+				</StackPanel>
+				<StackPanel Margin="75,10,0,0" Orientation="Horizontal">
+					<TextBlock Margin="0,10,0,0" VerticalAlignment="Center">Пароль</TextBlock>
+					<TextBox Name="PasswordBox" Margin="14,0,0,0" Watermark="Пароль" Width="200"></TextBox>
+				</StackPanel>
+				<StackPanel Margin="5,10,0,0" Orientation="Horizontal">
+					<TextBlock Margin="0,10,0,0" VerticalAlignment="Center">Повторите пароль</TextBlock>
+					<TextBox Name="ConfirmPasswordBox"  Margin="8,10,0,0" Watermark="Повторите пароль" Width="200"></TextBox>
+				</StackPanel>
+				<StackPanel Margin="100,10,0,0" Orientation="Horizontal">
+					<TextBlock VerticalAlignment="Center">Имя</TextBlock>
+					<TextBox Name="NameBox" Margin="12,10,0,0" Watermark="Имя" Width="200"></TextBox>
+				</StackPanel>
+				<StackPanel Margin="69,10,0,0" Orientation="Horizontal">
+					<TextBlock VerticalAlignment="Center">Фамилия</TextBlock>
+					<TextBox Name="SurnameBox" Margin="8,10,0,0" Watermark="Фамилия" Width="200"></TextBox>
+				</StackPanel>
+				<StackPanel Margin="103,10,0,0" Orientation="Horizontal">
+					<TextBlock VerticalAlignment="Center">Пол</TextBlock>
+					<ComboBox Name="GenderBox" Margin="10,0,0,0" Width="200">
+						<ComboBox.ItemTemplate>
+
+							<DataTemplate>
+
+								<TextBlock Text="{Binding Gender1}"></TextBlock>
+
+
+							</DataTemplate>
+						</ComboBox.ItemTemplate>
+					</ComboBox>
+				</StackPanel>
+			</StackPanel>
+			<StackPanel Margin="60,0,0,0" VerticalAlignment="Bottom">
+				<StackPanel Margin="0,0,0,0" Orientation="Horizontal">
+					<TextBlock Margin="0,10,0,0" VerticalAlignment="Center">Дата рождения: </TextBlock>
+					<TextBox Name="BirthDateBox" Height="30"  Margin="0,0,0,0" Watermark="1978-07-16" Width="200"></TextBox>
+				</StackPanel>
+				<StackPanel Margin="0,10,0,0" Orientation="Horizontal">
+					<TextBlock VerticalAlignment="Center">Страна</TextBlock>
+					<ComboBox Name="countryBox" Margin="5,10,0,0" Width="200">
+						<ComboBox.ItemTemplate>
+
+							<DataTemplate>
+
+								<TextBlock Text="{Binding Countryname}"></TextBlock>
+
+
+							</DataTemplate>
+						</ComboBox.ItemTemplate>
+					</ComboBox>
+				</StackPanel>
+			</StackPanel>
+			
+		</StackPanel>
+		<TextBlock Margin="20" HorizontalAlignment="Center" Name="MessageBox"></TextBlock>
+		<StackPanel Margin="0,50,0,0" HorizontalAlignment="Center" Orientation="Horizontal">
+			<Button Click="RegisterButton_Click">Регистрация</Button>
+			<Button Click="Stop" Margin="30,0,0,0">Отмена</Button>
+		</StackPanel>
+		<StackPanel Height="40" Margin="0,30,0,0" Background="DarkGray">
+			<TextBlock Name="CountdownText"
+                       FontSize="14"
+					   VerticalAlignment="Bottom"
+                       HorizontalAlignment="Center"
+                       Foreground="White"/>
+		</StackPanel>
+	</StackPanel>
+</Window>

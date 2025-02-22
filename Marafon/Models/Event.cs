@@ -19,6 +19,8 @@ public partial class Event
 
     public int? Maxparticipants { get; set; }
 
+    public int Id { get; set; }
+
     public virtual Eventtype Eventtype { get; set; } = null!;
 
     public virtual Marathon Marathon { get; set; } = null!;

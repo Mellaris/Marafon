@@ -7,11 +7,11 @@ using System.Timers;
 
 namespace Marafon;
 
-public partial class RunnerMenu : Window
+public partial class CheckRegistr : Window
 {
     private TextBlock _countdownText;
     private static readonly DateTime MarathonDate = new DateTime(2025, 11, 24, 0, 0, 0);
-    public RunnerMenu()
+    public CheckRegistr()
     {
         InitializeComponent();
         this.AttachDevTools();
@@ -33,8 +33,6 @@ public partial class RunnerMenu : Window
             _countdownText.Text = $"{timeLeft.Days} дней {timeLeft.Hours} часов {timeLeft.Minutes} минут до старта марафона!";
         });
     }
-
-
     private void Back(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
     {
         StaticHelp.role = "1";
@@ -49,9 +47,4 @@ public partial class RunnerMenu : Window
         Close();
     }
 
-    private void Button_Click_2(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
-    {
-        new RegisterMarathon().Show();
-        Close();
-    }
 }

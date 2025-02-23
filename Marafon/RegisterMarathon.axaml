@@ -1,0 +1,93 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="550"
+        x:Class="Marafon.RegisterMarathon"
+		x:CompileBindings="False"
+        Title="RegisterMarathon">
+ <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+			<RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        
+        <DockPanel Background="Gray" Grid.Row="0" Height="50">
+            <Button Content="Назад" Margin="10" DockPanel.Dock="Left" Width="75"/>
+            <TextBlock Text="MARATHON SKILLS 2016" FontSize="18" FontWeight="Bold" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            <Button Content="Logout" Margin="290,0,0,0" DockPanel.Dock="Right" Width="75"/>
+        </DockPanel>
+        
+        <StackPanel Grid.Row="1" Margin="20" HorizontalAlignment="Center">
+            <TextBlock Text="Регистрация на марафон" FontSize="20" FontWeight="Bold" TextAlignment="Center"/>
+            <TextBlock Text="Пожалуйста, заполните всю информацию, чтобы зарегистрироваться..." TextAlignment="Center" TextWrapping="Wrap" Width="600"/>
+        </StackPanel>
+        
+        <Grid Grid.Row="2" Margin="20">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+            
+            <StackPanel Grid.Column="0" Margin="10">
+                <TextBlock Text="Вид марафона" FontSize="16" FontWeight="Bold"/>
+                <CheckBox Content="42km Полный марафон ($145)" IsChecked="True"/>
+                <CheckBox Content="21km Полумарафон ($75)"/>
+                <CheckBox Content="5km Малая дистанция ($20)" IsChecked="True"/>
+            </StackPanel>
+            
+            <StackPanel Grid.Column="1" Margin="10">
+                <TextBlock Text="Варианты комплектов" FontSize="16" FontWeight="Bold"/>
+                <RadioButton Content="Вариант A ($0): Номер бегуна + RFID браслет"/>
+                <RadioButton Content="Вариант B ($20): Вариант A + бейсболка + бутылка воды" IsChecked="True"/>
+                <RadioButton Content="Вариант C ($45): Вариант B + футболка + сувенирный буклет"/>
+            </StackPanel>
+        </Grid>
+        
+        <StackPanel Grid.Row="2" Margin="20,200,0,0" Orientation="Horizontal" VerticalAlignment="Bottom">
+			<StackPanel>
+				<TextBlock Text="Детали спонсорства" FontSize="16" FontWeight="Bold"/>
+				<StackPanel Orientation="Horizontal" Margin="5">
+					<TextBlock Text="Взнос:" Width="100" VerticalAlignment="Center"/>
+					<ComboBox Name="charityComboBox" Width="200">
+						<ComboBox.ItemTemplate>
+
+							<DataTemplate>
+
+								<TextBlock Text="{Binding Charityname}"></TextBlock>
+
+
+							</DataTemplate>
+						</ComboBox.ItemTemplate>
+					</ComboBox>
+				</StackPanel>
+				<StackPanel Orientation="Horizontal" Margin="5">
+					<TextBlock Text="Сумма взноса:" Width="100" VerticalAlignment="Center"/>
+					<TextBox Width="200" Text="$500"/>
+				</StackPanel>
+			</StackPanel>
+			<StackPanel Margin="150,0,0,0">
+				<TextBlock>Регистрационный взнос</TextBlock>
+				<TextBlock FontSize="22" Margin="50,30,0,0"></TextBlock>
+			</StackPanel>
+        </StackPanel>
+        
+        <StackPanel Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Center" Margin="120,0,0,0">
+            <Button Click="Button_Click" Content="Регистрация" Width="110" Margin="5"/>
+            <Button Content="Отмена" Width="100" Margin="5"/>
+        </StackPanel>
+	 
+	 
+	 <StackPanel Grid.Row="4" VerticalAlignment="Bottom" Height="40" Margin="0,0,0,0" Background="DarkGray">
+		 <TextBlock Name="CountdownText"
+					FontSize="14"
+					VerticalAlignment="Bottom"
+					HorizontalAlignment="Center"
+					Foreground="White"/>
+	 </StackPanel>
+	 
+    </Grid>
+</Window>

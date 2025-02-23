@@ -2,10 +2,10 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        mc:Ignorable="d" d:DesignWidth="600" d:DesignHeight="400"
-        x:Class="Marafon.RunnerMenu"
-		Width="600" Height="400"
-        Title="RunnerMenu">
+        mc:Ignorable="d" d:DesignWidth="600" d:DesignHeight="360"
+        x:Class="Marafon.CheckRegistr"
+		Width="600" Height="360"
+        Title="CheckRegistr">
 	<StackPanel>
 		<StackPanel Height="60" Background="DarkGray" Orientation="Horizontal">
 			<Button Click="Button_Click_1" Margin="30,0,0,0">Назад</Button>
@@ -15,28 +15,12 @@
                        HorizontalAlignment="Center">MARATHON SKILLS 2016</TextBlock>
 			<Button Click="Back" Margin="90,0,0,0" HorizontalAlignment="Right">LogOut</Button>
 		</StackPanel>
-		<TextBlock Margin="0,30,0,0"  FontSize="24"
-                       FontWeight="Regular"
-                       HorizontalAlignment="Center">Меню бегуна</TextBlock>
-		<StackPanel Margin="0,20,0,0" HorizontalAlignment="Center" Orientation="Horizontal">
-			<StackPanel >
-				<Button Click="Button_Click_2" Margin="10"  Width="200" CornerRadius="8">Регистрация на марафон</Button>
-				<Button  Margin="10"  Width="200" CornerRadius="8">
-					Редактирования профиля
-				</Button>
-				<Button  Margin="10"  Width="200" CornerRadius="8">Контакты</Button>
-			</StackPanel>
-			<StackPanel>
-				<Button  Margin="10"  Width="200" CornerRadius="8">
-					Мои результаты
-				</Button>
-				<Button  Margin="10"  Width="200" CornerRadius="8">
-					Мой спонсор
-				</Button>
-				
-			</StackPanel>
-		</StackPanel>
-
+		
+			<TextBlock Margin="10" HorizontalAlignment="Center">Спасибо за вашу регистрацию  в качестве бегуна!</TextBlock>
+			<TextBlock Margin="5" HorizontalAlignment="Center">Спасибо за вашу регистрацию  в качестве бегуна MARATHON SKILLS 2016</TextBlock>
+			<TextBlock Margin="15" HorizontalAlignment="Center">С вами свяжутся для оплаты</TextBlock>
+		
+		<Button Margin="0,50,0,0" HorizontalAlignment="Center">ОК</Button>
 		<StackPanel VerticalAlignment="Bottom" Height="40" Margin="0,75,0,0" Background="DarkGray">
 			<TextBlock Name="CountdownText"
                        FontSize="14"
